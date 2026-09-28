@@ -1,9 +1,11 @@
+
 .venv/
 .vscode/
 __pycache__/
 *.pyc
 .streamlit/
-traffic_monitor/
+venv/
 videos/
 outputs/
 datasets/
+
