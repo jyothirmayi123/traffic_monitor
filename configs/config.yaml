@@ -1,0 +1,23 @@
+# ---------- Model ----------
+model: yolo11n.pt        # auto-downloaded on first run; or path to your fine-tuned best.pt
+conf: 0.35               # confidence threshold
+iou: 0.5                 # NMS IoU threshold
+imgsz: 640
+device: null             # null = auto, or "cpu", "0" (GPU)
+tracker: bytetrack.yaml  # or botsort.yaml
+
+# ---------- Vehicle classes (COCO ids used by pretrained YOLO11n) ----------
+classes:
+  1: bicycle
+  2: car
+  3: motorcycle
+  5: bus
+  7: truck
+
+# ---------- Counting line (relative coords 0-1: x1, y1, x2, y2) ----------
+# Default: horizontal line at 60% of frame height
+line: [0.0, 0.60, 1.0, 0.60]
+
+# ---------- Display ----------
+trail_length: 30
+show_trails: true
