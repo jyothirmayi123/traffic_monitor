@@ -1,0 +1,14 @@
+# Custom dataset config (YOLO format). Edit paths/classes to match your data.
+# Expected layout:
+#   datasets/vehicles/images/{train,val}/*.jpg
+#   datasets/vehicles/labels/{train,val}/*.txt
+path: datasets/vehicles
+train: images/train
+val: images/val
+names:
+  0: car
+  1: bus
+  2: truck
+  3: motorcycle
+  4: bicycle
+  5: auto_rickshaw

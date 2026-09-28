@@ -1,0 +1,8 @@
+__pycache__/
+venv/
+runs/
+outputs/*
+!outputs/.gitkeep
+*.pt
+datasets/*
+!datasets/.gitkeep
